@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikační software</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://img.lovepik.com/bg/20240415/Exploring-the-CPU-and-Technology-An-Intriguing-3D-Illustration-of_5831935_wh1200.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .topnav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        .topnav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .flex-container > div {
+            background-color: #fff;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1 1 30%;
+            max-width: 30%;
+            transition: transform 0.2s;
+        }
+
+        .flex-container > div:hover {
+            transform: scale(1.05);
+        }
+
+        .flex-container > div h3 {
+            margin-top: 0;
+        }
+
+        .flex-container a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .flex-container a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            text-align: center;
+            cursor: pointer;
+            display: none;
+        }
+
+        .back-to-top:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Aplikační software</h1>
+    </header>
+    <nav class="topnav">
+        <a class="active" href="../index.html">Úvodní stránka</a>
+        <a href="index.html">Programové a datové soubory</a>
+        <a href="about.html">Operační systémy</a>
+        <a href="tree.html">Ovladače, firmware a utility</a>
+        <a href="house.html">Aplikační software</a>
+        <a href="pes.html">Instalace programů</a>
+        <a href="red.html">Software a autorský zákon</a>
+    </nav>
+    <main>
+        <div class="flex-container">
+            <div>
+                <h3>Multimediální programy</h3>
+                <p>Umožňují vytváření, zpracování a prezentaci multimediálních, tedy především audiovizuálních dat na počítači. Kromě nejrůznějších multimediálních přehrávačů zde můžeme zařadit řadu programů pro editaci digitálního zvuku nebo videa, programy pro tvorbu multimediálních prezentací, výukové programy, ale také rozsáhlou oblast počítačových her.</p>
+            </div>
+            <div>
+                <h3>Programy pro komunikaci v počítačové síti</h3>
+                <p>Slouží pro správu počítačových sítí, vzdálené řízení počítače, přenos a přístup ke vzdáleným souborům a vzdálený tisk, pro připojení vnitřní podnikové sítě (intranet) na síť celosvětovou (Internet) přes poskytovatele Internetu. K základním uživatelským (klientským) aplikacím patří webové prohlížeče, klienty elektronické pošty a groupware (software pro skupinovou práci), prostředky online komunikace (IM - Instant Messaging) a jiné.</p>
+            </div>
+            <div>
+                <h3>Informační a databázové systémy</h3>
+                <p>Informační systémy (IS - information systems) představují komplexní programové vybavení určité instituce nebo firmy. Základem IS jsou obvykle tzv. datové sklady (data warehouse) založené na databázových systémech. Podnikové informační systémy bývají označovány zkratkou ERP (Enterprise Resource Planning) a jsou tvořeny celou řadou dílčích programových modulů (např. moduly pro výrobu, logistiku, správu majetku, účetnictví ...) K lídrům v oblasti informačních i databázových systémů patří velké firmy jako Oracle, Microsoft, IBM, SAP. Kromě komplexních IS jsou vyvíjeny mnohé specializované aplikace pro podporu výrobních procesů, ekonomických transakcí a nejrůznějších jiných pracovních činností.</p>
+            </div>
+            <div>
+                <h3>Malware a antivirové programy</h3>
+                <p>Zatímco malware je počítačový program určený ke vniknutí nebo poškození počítačového systému, cílem antivirových programů (např. AVG, AVAST, ESET, Kaspersky Antivirus atd.) je chránit počítačové systémy před tímto nežádoucím softwarem.</p>
+            </div>
+            <div>
+                <h3>Integrovaná vývojová prostředí</h3>
+                <p>Obvykle jsou označována zkratkou IDE (Integrated Development Environment) a používají je programátoři k vývoji aplikací. Tradičně je tvoří editor s různými pomůckami pro psaní programového kódu, ladicí prostředky, překladače a další nástroje zefektivňující práci vývojářů.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

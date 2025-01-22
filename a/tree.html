@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ovladače, firmware a utility</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .topnav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        .topnav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        main {
+            padding: 20px;
+            flex: 1;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .flex-container > div {
+            background-color: #fff;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1 1 30%;
+            max-width: 30%;
+            transition: transform 0.2s;
+        }
+
+        .flex-container > div:hover {
+            transform: scale(1.05);
+        }
+
+        .flex-container > div h3 {
+            margin-top: 0;
+        }
+
+        .flex-container a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .flex-container a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            text-align: center;
+            cursor: pointer;
+            display: none;
+        }
+
+        .back-to-top:hover {
+            background-color: #333;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .image-container img {
+            width: 40%; /* Změněno z 30% na 40% */
+            max-width: 400px; /* Změněno z 300px na 400px */
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ovladače, firmware a utility</h1>
+    </header>
+    <div class="topnav">
+        <a class="active" href="../index.html">Úvodní stránka</a>
+        <a href="index.html">Programové a datové soubory</a>
+        <a href="about.html">Operační systémy</a>
+        <a href="tree.html">Ovladače, firmware a utility</a>
+        <a href="house.html">Aplikační software</a>
+        <a href="pes.html">Instalace programů</a>
+        <a href="red.html">Software a autorský zákon</a>
+    </div>
+    <main>
+        <div class="flex-container">
+            <div>
+                <h3>Ovladače zařízení</h3>
+                <p>K systémovému software můžeme kromě operačních systémů zařadit ovladače hardarových zařízení, firmware a aspoň zčásti i tzv. utility.
+                Speciální programy, které zajišťují komunikaci OS s určitým technickým vybavením. Bez potřebného ovladače nemůže zařízení správně fungovat. Standardní ovladače pro běžná zařízení, jakými jsou flash disk, myš, klávesnice nebo digitální fotoaparáty, bývají součástí moderních OS.
+                </p>
+                <p>
+                Instalaci zařízení ve Windows usnadňuje standard Plug and Play (PnP - „připoj a hrej“), který zajistí automatickou detekci nově připojeného hardware a případně i automatické vyhledání potřebného ovladače. Není-li driver nalezen přímo v OS, musí být použit externí instalátor ovladače z disku dodaného se zařízením (např. z instalačního CD k tiskárně), nebo stažený z internetových stránek, nejlépe přímo od výrobce. Nevhodně zvolený ovladač může v krajním případě způsobit nefunkčnost zařízení, někdy i celého OS.
+                </p>
+            </div>
+            <div>
+                <h3>Firmware</h3>
+                <p>
+                Programové vybavení, které slouží pro řízení nějakého vestavěného systému (embedded system). Firmware řídí například kalkulačky, počítačové komponenty (pevný disk, router…), mobilní telefon, digitální fotoaparát atd.
+                </p>
+                <p>
+                Dříve byla aktualizace firmwaru realizována nahrazením paměťového média obsahujícího firmware (např. výměna ROM paměti), dnes může být novější verze firmware přepsána díky používaným flash pamětem. Základním firmwarem v počítači je BIOS (Basic Output-Input System), který zajišťuje především start počítače a umožňuje konfiguraci základní desky i připojeného hardware.
+                </p>
+            </div>
+            <div>
+                <h3>Utility</h3>
+                <p>
+                Jsou menší pomocné programy, které umožňují vykonávat servisní operace potřebné k fungování počítače. Patří k nim:
+                </p>
+                <ul>
+                <li>Komprimační programy</li>
+                <li>Diagnostické a testovací programy</li>
+                <li>Utility pro kontrolu a optimalizaci operačního systému</li>
+                <li>Různé konverzní (převodní) programy, které umí přehledně zobrazit obrázky, převést je z jednoho formátu na jiný atd.</li>
+                </ul>
+                <p>
+                Řada utilit je integrální součástí OS. Příkladem může být Správce úloh ve Windows (Task Manager), který umožňuje nejen správu spuštěných programů a služeb, ale i sledování využití systémových zdrojů (procesoru, paměti). Dalšími užitečnými utilitami jsou nástroje pro defragmentaci (defrag) nebo kontrolu disku (chkdsk). Některé utility lze spouštět z příkazového řádku (ping, ipconfig apod.).
+                </p>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://rydalgroup.co.uk/wp-content/uploads/2024/05/Firmware-1-1024x683.jpeg" alt="Firmware Image">
+            <img src="https://turingpi.com/wp-content/uploads/2023/10/fw2-1.png" alt="Firmware Image 2">
+            <img src="https://www.vvdntech.com/blog/wp-content/uploads/d94181e723609b6481114c757cb1d3c1.jpg" alt="Firmware Image 3">
+        </div>
+    </main>
+</body>
+</html>
